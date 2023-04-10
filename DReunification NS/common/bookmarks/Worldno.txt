@@ -1,0 +1,10 @@
+bookmarks = {
+	bookmark = {
+		#name = x
+		#desc = x
+		#date = x
+		#picture = x
+		#default_country = VIC
+		#effect = { }
+	}
+}
