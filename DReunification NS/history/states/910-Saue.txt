@@ -1,0 +1,27 @@
+
+state={
+	id=910
+	name = "STATE_910" # Saue
+	manpower = 25557
+	state_category = pastoral
+
+	history={
+		owner = FES
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			496 1
+		}
+		
+	}
+
+	provinces={
+		496
+	}
+
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

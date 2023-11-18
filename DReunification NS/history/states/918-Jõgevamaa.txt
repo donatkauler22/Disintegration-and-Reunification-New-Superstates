@@ -1,0 +1,26 @@
+
+state={
+	id=918
+	name = "STATE_918" # Jõgevamaa
+	manpower = 28082
+	state_category = rural
+
+	history={
+		owner = POI
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6099 1
+		}
+		
+	}
+
+	provinces={
+		6099 11057
+	}
+
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

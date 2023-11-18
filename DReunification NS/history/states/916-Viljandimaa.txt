@@ -1,0 +1,26 @@
+
+state={
+	id=916
+	name = "STATE_916" # Viljandimaa
+	manpower = 45877
+	state_category = rural
+
+	history={
+		owner = POV
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			6381 1
+		}
+		
+	}
+
+	provinces={
+		6381 308 6178 6408
+	}
+
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

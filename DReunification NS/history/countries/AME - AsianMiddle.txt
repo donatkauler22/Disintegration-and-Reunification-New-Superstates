@@ -1,0 +1,29 @@
+capital = 608 #Пекин
+
+set_research_slots = 1
+
+# Starting tech
+set_technology = {
+	
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2025.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 6.45
+	fascism = 5.17
+	communism = 42.42
+	neutrality = 45.96
+}
+add_ideas = {
+    Economynot
+	PoliticoNot
+	KulturreNot
+	NotWar
+}
+

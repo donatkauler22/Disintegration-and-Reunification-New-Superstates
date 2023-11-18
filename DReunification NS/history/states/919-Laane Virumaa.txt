@@ -1,0 +1,29 @@
+
+state={
+	id=919
+	name = "STATE_919" # Lääne-Virumaa
+	manpower = 58402
+	state_category = rural
+
+	history={
+		owner = POA
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			11127 1
+		}
+		victory_points = {
+			11443 1
+		}
+		
+	}
+
+	provinces={
+		11127 11443
+	}
+
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

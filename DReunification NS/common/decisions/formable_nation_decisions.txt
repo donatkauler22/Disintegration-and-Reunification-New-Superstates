@@ -1,0 +1,109 @@
+form_estonia_category = {
+
+	form_estonia_category = {
+
+		icon = generic_form_nation
+		fire_only_once = yes
+		allowed = {
+			OR = {
+				original_tag = CRN
+				original_tag = CRP
+				original_tag = CRT
+				original_tag = CSK
+				original_tag = CTT
+				original_tag = FES
+				original_tag = ISH
+				original_tag = ISS
+				original_tag = NOI
+				original_tag = PO1
+				original_tag = POA
+				original_tag = POH
+				original_tag = POI
+				original_tag = POJ
+				original_tag = POV
+				original_tag = ROP
+			}
+		}
+
+		available = {
+			is_subject = no
+			# Estonia
+			custom_trigger_tooltip = {
+				tooltip = form_country_estonia_required_states_tt
+				controls_state = 191
+				controls_state = 916
+				controls_state = 13
+				controls_state = 918
+				controls_state = 917
+				controls_state = 910
+				controls_state = 915
+				controls_state = 914
+				controls_state = 913
+				controls_state = 811
+				controls_state = 813
+				controls_state = 919
+				controls_state = 912
+				controls_state = 812
+				controls_state = 911
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = CRN
+				original_tag = CRP
+				original_tag = CRT
+				original_tag = CSK
+				original_tag = CTT
+				original_tag = FES
+				original_tag = ISH
+				original_tag = ISS
+				original_tag = NOI
+				original_tag = PO1
+				original_tag = POA
+				original_tag = POH
+				original_tag = POI
+				original_tag = POJ
+				original_tag = POV
+				original_tag = ROP
+			}
+			NOT = { has_global_flag = form_baltic_federation_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = EST
+			# Estonia
+			custom_effect_tooltip = form_country_estonia_coring_states_tt
+			hidden_effect = {
+				191 = { add_core_of = ROOT }
+				916 = { add_core_of = ROOT }
+				13 = { add_core_of = ROOT }
+				918 = { add_core_of = ROOT }
+				917 = { add_core_of = ROOT }
+				910 = { add_core_of = ROOT }
+				915 = { add_core_of = ROOT }
+				914 = { add_core_of = ROOT }
+				913 = { add_core_of = ROOT }
+				811 = { add_core_of = ROOT }
+				813 = { add_core_of = ROOT }
+				919 = { add_core_of = ROOT }
+				912 = { add_core_of = ROOT }
+				812 = { add_core_of = ROOT }
+				911 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				news_event = { id = wtt_news.60 hours = 6 }
+				set_global_flag = form_baltic_federation_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = no
+			}
+		}
+	}
+		
+}

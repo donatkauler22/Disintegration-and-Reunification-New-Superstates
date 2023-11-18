@@ -1,0 +1,80 @@
+BLACKARMY = {
+    EPF_BLACKARMY = {
+	allowed = {
+		OR = {
+				original_tag = CRN
+				original_tag = CRP
+				original_tag = CRT
+				original_tag = CSK
+				original_tag = CTT
+				original_tag = FES
+				original_tag = ISH
+				original_tag = ISS
+				original_tag = NOI
+				original_tag = PO1
+				original_tag = POA
+				original_tag = POH
+				original_tag = POI
+				original_tag = POJ
+				original_tag = POV
+				original_tag = ROP
+		}
+	}
+        icon = generic_propaganda      #For GFX_decision_QAT_example
+        fire_only_once = no
+        days_remove = 60
+        modifier = {
+            training_time_factor = 0.75
+	    weekly_manpower = 400
+	    minimum_training_level = 0.1
+	    
+        }
+	available = {
+    	    has_opinion = {
+    		target = EPF
+    		value > 49
+	    }
+	}
+        cancel_trigger = {
+	  OR = {
+	    has_war = yes
+		EPF = {
+			has_opinion = {
+				target = FES
+				value < 51
+			}
+		}
+
+	  }        
+	complete_effect = {
+		add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 200
+    			producer = FES
+		}
+		army_experience = 5
+		FES = {
+			910 = { 
+				remove_building = { type = arms_factory  level = 1 }
+			}
+		}
+
+		EPF = {
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+	}
+	remove_effect = {
+		FES = {
+			910 = { 
+				add_offsite_building = { type = arms_factory level = 1 }
+			}
+		}
+		EPF = {
+			remove_building = { type = arms_factory  level = 1 }
+		}
+    
+        cancel_effect = {
+		
+        }
+    }
+}

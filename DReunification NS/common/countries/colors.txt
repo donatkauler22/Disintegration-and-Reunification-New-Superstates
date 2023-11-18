@@ -1,0 +1,82 @@
+#reload countrycolors
+
+EPF = {
+	color = rgb { 31 34 255 }
+	color_ui = rgb { 206 100 100 }
+}
+AME = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 0 100 100 }
+}
+TAU = {
+	color = rgb { 191 166 0 }
+	color_ui = rgb { 191 0 0 }
+}
+AAM = {
+	color = rgb { 0 110 255 }
+	color_ui = rgb { 0 110 255 }
+}
+NOI = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+FES = {
+	color = rgb { 0 81 125 }
+	color_ui = rgb { 0 81 125 }
+}
+CRN = {
+	color = rgb { 175 64 53 }
+	color_ui = rgb { 175 64 53 }
+}
+CRP = {
+	color = rgb { 255 215 0 }
+	color_ui = rgb { 255 215 0 }
+}
+CRT = {
+	color = rgb { 0 152 255 }
+	color_ui = rgb { 0 152 255 }
+}
+CSK = {
+	color = rgb { 124 0 0 }
+	color_ui = rgb { 124 0 0 }
+}
+CTT = {
+	color = rgb { 48 213 200 }
+	color_ui = rgb { 48 213 200 }
+}
+ISH = {
+	color = rgb { 0 81 125 } #########################
+	color_ui = rgb { 0 81 125 } ##########################
+}
+ISS = {
+	color = rgb { 0 25 255 }
+	color_ui = rgb { 0 25 255 }
+}
+POA = {
+	color = rgb { 255 0 218 }
+	color_ui = rgb { 255 0 218 }
+}
+POH = {
+	color = rgb { 255 138 0 }
+	color_ui = rgb { 255 138 0 }
+}
+POI = {
+	color = rgb { 111 111 111 }
+	color_ui = rgb { 111 111 111 }
+}
+POJ = {
+	color = rgb { 77 31 0 }
+	color_ui = rgb { 77 31 0 }
+}
+PO1 = {
+	color = rgb { 135 0 255 }
+	color_ui = rgb { 135 0 255 }
+}
+POV = {
+	color = rgb { 255 255 0 }
+	color_ui = rgb { 255 255 0 }
+}
+ROP = {
+	color = rgb { 26 121 0 }
+	color_ui = rgb { 26 121 0 }
+}

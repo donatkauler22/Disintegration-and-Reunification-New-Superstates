@@ -1,0 +1,27 @@
+
+state={
+	id=911
+	name = "STATE_911" # Paldiski
+	manpower = 12874
+	state_category = rural
+
+	history={
+		owner = ROP
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			567 1
+		}
+		
+		
+	}
+
+	provinces={
+		567
+	}
+
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

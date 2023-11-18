@@ -1,0 +1,30 @@
+capital = 361 #Нюр юрк
+
+set_research_slots = 1
+
+# Starting tech
+set_technology = {
+	
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2025.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 97
+	fascism = 1
+	communism = 1
+	neutrality = 1
+}
+add_ideas = {
+    Economynot
+	PoliticoNot
+	KulturreNot
+	NotWar
+}
+
+

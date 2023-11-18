@@ -1,0 +1,650 @@
+focus_tree = {
+	id = EPF
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EPF
+		}
+	}
+	default = no
+	focus = {
+		id = EPF_10
+		desc = EPF_10_desc
+		title = EPF_10_tt
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 10,00
+		x = 15
+		y = 1
+		completion_reward = {
+				add_timed_idea = { idea = Fix days = 360 }
+		}
+
+	}
+	focus = {
+		id = EPF_8
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_10
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = EPF_9
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_10
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = EPF_2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_8
+		}
+		prerequisite = {
+			focus = EPF_9
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = EPF_1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_2
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = EPF_6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_1
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = EPF_7
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_6
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = EPF_3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_2
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = EPF_4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_3
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = EPF_5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_4
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = EPF_NewCountry1
+		icon = GFX_goal_unknown
+		cost = 20,00
+		prerequisite = {
+			focus = EPF_7
+		}
+		prerequisite = {
+			focus = EPF_5
+		}
+		prerequisite = {
+			focus = EPF_6
+		}
+		prerequisite = {
+			focus = EPF_4
+		}
+		prerequisite = {
+			focus = EPF_1
+		}
+		prerequisite = {
+			focus = EPF_3
+		}
+		prerequisite = {
+			focus = EPF_2
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = EPF_Economy1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_NewCountry1
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = EPF_Economy2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_NewCountry1
+		}
+		x = 19
+		y = 8
+
+	}
+	focus = {
+		id = EPF_Economy3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_NewCountry1
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = EPF_Politic1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_NewCountry1
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = EPF_Politic2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_NewCountry1
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = EPF_Politic3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_NewCountry1
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = EPF_NewCountry2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_NewCountry1
+		}
+		prerequisite = {
+			focus = EPF_Politic3
+		}
+		prerequisite = {
+			focus = EPF_Politic2
+		}
+		prerequisite = {
+			focus = EPF_Politic1
+		}
+		prerequisite = {
+			focus = EPF_Economy1
+		}
+		prerequisite = {
+			focus = EPF_Economy2
+		}
+		prerequisite = {
+			focus = EPF_Economy3
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = EPF_Good
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_NewCountry2
+		}
+		mutually_exclusive = {
+			focus = EPF_BAD
+		}
+		x = 9
+		y = 12
+
+	}
+	focus = {
+		id = EPF_BAD
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_NewCountry2
+		}
+		mutually_exclusive = {
+			focus = EPF_Good
+		}
+		x = 21
+		y = 12
+
+	}
+	focus = {
+		id = EPF_SA
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_Good
+			focus = EPF_BAD
+		}
+		x = 15
+		y = 13
+
+	}
+	focus = {
+		id = EPF_SA1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_SA
+		}
+		x = 13
+		y = 14
+
+	}
+	focus = {
+		id = EPF_SA2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_SA
+		}
+		x = 17
+		y = 14
+
+	}
+	focus = {
+		id = EPF_newfocus1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_Good
+		}
+		x = 9
+		y = 13
+
+	}
+	focus = {
+		id = EPF_newfocus2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_newfocus6
+		}
+		x = 10
+		y = 16
+
+	}
+	focus = {
+		id = EPF_newfocus3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_SA
+		}
+		x = 15
+		y = 15
+
+	}
+	focus = {
+		id = EPF_newfocus4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_newfocus1
+		}
+		x = 9
+		y = 14
+
+	}
+	focus = {
+		id = EPF_newfocus5
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_SA1
+		}
+		x = 13
+		y = 16
+
+	}
+	focus = {
+		id = EPF_newfocus6
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_newfocus4
+		}
+		x = 10
+		y = 15
+
+	}
+	focus = {
+		id = EPF_newfocus7
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_newfocus9
+		}
+		x = 8
+		y = 16
+
+	}
+	focus = {
+		id = EPF_newfocus8
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_SA2
+		}
+		x = 17
+		y = 16
+
+	}
+	focus = {
+		id = EPF_newfocus9
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_newfocus4
+		}
+		x = 8
+		y = 15
+
+	}
+	focus = {
+		id = EPF_badfocus1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_BAD
+		}
+		x = 21
+		y = 13
+
+	}
+	focus = {
+		id = EPF_badfocus2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_badfocus1
+		}
+		x = 23
+		y = 14
+
+	}
+	focus = {
+		id = EPF_n1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_n2
+		}
+		x = 20
+		y = 17
+
+	}
+	focus = {
+		id = EPF_n2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_n3
+		}
+		x = 21
+		y = 16
+
+	}
+	focus = {
+		id = EPF_n3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_badfocus2
+		}
+		x = 21
+		y = 15
+
+	}
+	focus = {
+		id = EPF_a1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_badfocus2
+		}
+		x = 27
+		y = 15
+
+	}
+	focus = {
+		id = EPF_a2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_a1
+		}
+		x = 25
+		y = 16
+
+	}
+	focus = {
+		id = EPF_a3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_a1
+		}
+		x = 27
+		y = 16
+
+	}
+	focus = {
+		id = EPF_a4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_a1
+		}
+		x = 29
+		y = 16
+
+	}
+	focus = {
+		id = EPF_de1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_n1
+			focus = EPF_as1
+		}
+		x = 24
+		y = 19
+
+	}
+	focus = {
+		id = EPF_as1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_a2
+		}
+		prerequisite = {
+			focus = EPF_a3
+		}
+		prerequisite = {
+			focus = EPF_a4
+		}
+		x = 27
+		y = 17
+
+	}
+	focus = {
+		id = EPF_badfocus3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_badfocus2
+		}
+		x = 36
+		y = 15
+
+	}
+	focus = {
+		id = EPF_l1
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_badfocus3
+		}
+		x = 32
+		y = 17
+
+	}
+	focus = {
+		id = EPF_l2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_badfocus3
+		}
+		x = 33
+		y = 16
+
+	}
+	focus = {
+		id = EPF_l3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_badfocus3
+		}
+		x = 39
+		y = 16
+
+	}
+	focus = {
+		id = EPF_l4
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_badfocus3
+		}
+		x = 40
+		y = 17
+
+	}
+	focus = {
+		id = EPF_newbad
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_l4
+		}
+		prerequisite = {
+			focus = EPF_l1
+		}
+		x = 30
+		y = 19
+
+	}
+	focus = {
+		id = EPF_newbad2
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_l4
+		}
+		prerequisite = {
+			focus = EPF_l1
+		}
+		x = 42
+		y = 19
+
+	}
+	focus = {
+		id = EPF_newbad3
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_newbad
+		}
+		prerequisite = {
+			focus = EPF_newbad2
+		}
+		x = 36
+		y = 21
+
+	}
+	focus = {
+		id = EPF_Newwar
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = EPF_de1
+		}
+		prerequisite = {
+			focus = EPF_newbad3
+		}
+		x = 29
+		y = 24
+
+	}
+}

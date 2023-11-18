@@ -1,0 +1,26 @@
+
+state={
+	id=912
+	name = "STATE_912" # Kehra
+	manpower = 6253
+	state_category = pastoral
+
+	history={
+		owner = CSK
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			11426 1
+		}
+		
+	}
+
+	provinces={
+		11426
+	}
+
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}

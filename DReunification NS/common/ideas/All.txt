@@ -1,0 +1,149 @@
+ideas = {
+
+	country = {
+		Economynot = {
+			picture = GFX_idea_fire_factories      # Using GFX_idea_my_picture
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.5
+				political_power_gain = -0.9
+				stability_factor = -0.9
+				war_support_factor = -0.9
+				war_support_weekly = -0.05
+				production_speed_buildings_factor = -0.25 
+			}
+		}
+		
+		PoliticoNot = {
+			picture = GFX_idea_fire    # Using GFX_idea_my_picture
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				war_support_weekly = -0.05
+				production_speed_buildings_factor = -0.10 
+			}
+		}
+
+		KulturreNot = {
+			picture = GFX_idea_rebellion       # Using GFX_idea_my_picture
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				research_speed_factor = -0.2
+				forced_surrender_limit = -0.5
+				drift_defence_factor = -0.3
+			}
+		}
+		NotWar = {
+			picture = GFX_idea_constitution     # Using GFX_idea_my_picture
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			rule = {
+				can_join_factions = no
+				can_be_called_to_war = no
+				can_declare_war_on_same_ideology = no
+				can_not_declare_war = yes
+			}
+		}
+		Fix = {
+			picture = GFX_idea_parliament        # Using GFX_idea_my_picture
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = 0.06
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+			}
+		}
+		nobal = {
+			picture = GFX_idea_fire_factories     # Using GFX_idea_my_picture
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_gain = 0.06
+				stability_weekly = -0.01
+				war_support_weekly = -0.01
+				consumer_goods_factor = 0.9
+				political_power_gain = -2.5
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				war_support_weekly = -0.05
+				production_speed_buildings_factor = -1
+				research_speed_factor = -1
+				forced_surrender_limit = -0.8
+				drift_defence_factor = -0.3
+				production_factory_efficiency_gain_factor = -1
+				production_factory_max_efficiency_factor = -1
+				production_factory_start_efficiency_factor = -1 
+			}
+			rule = {
+				can_join_factions = no
+				can_be_called_to_war = no
+				can_declare_war_on_same_ideology = no
+				can_not_declare_war = yes
+			}
+		}
+		donatk = {
+			picture = GFX_idea_donatk
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+	}
+}

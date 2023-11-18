@@ -1,0 +1,26 @@
+
+state={
+	id=917
+	name = "STATE_917" # Järvamaa
+	manpower = 9513
+	state_category = rural
+
+	history={
+		owner = POJ
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			9079 1
+		}
+		
+	}
+
+	provinces={
+		9079
+	}
+
+	buildings_max_level_factor=1.000
+	
+	local_supplies=0.000
+}
